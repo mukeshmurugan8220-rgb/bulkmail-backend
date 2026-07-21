@@ -23,7 +23,7 @@ mongoose
   .catch((err) => console.log("❌ MongoDB Error:", err.message));
 
 // Routes
-app.use("/api", require("./routes/mailRoutes"));
+app.use("/api", require("./routes/temp"));
 
 app.get("/", (req, res) => {
   res.send("Bulk Mail API Running...");
